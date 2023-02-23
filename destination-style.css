@@ -1,0 +1,378 @@
+
+.main-cont {
+    background-image: url(/assets/destination/background-destination-mobile.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-width: 360px;
+    padding-bottom: 24px;
+    background-attachment: fixed;
+    
+    
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+header {
+    width: 100%;
+    padding: 24px;
+    
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    align-items: center;
+    
+}
+
+.icon-menu-and-options {
+    z-index: 1000;
+}
+
+.icon-menu {
+    width: 24px;
+    height: 21px;
+    background-image: url(/icon-hamburger.svg);
+    transition: 0.3s;
+    
+    
+}
+
+.open {
+    width: 25px;
+    height: 25px;
+    background-image: url(/icon-close.svg);
+    background-size: cover;
+    transition: 0.3s;
+
+}
+
+.menu {    
+    position: absolute;
+    right: 0;    
+    width: 65%;
+    background-color: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(19px);
+    height: 100%;
+    top: 0;
+    z-index: 100; 
+    padding-left: 48px;
+    padding-top: 118px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    transition: 1s;
+    
+
+
+    
+}
+.inactive {
+    top: -200vh;
+    transition: 0s;
+}
+
+.numbers {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.text-option {
+    color: #D0D6F9;
+
+}
+
+
+
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background-image: url(/logo.svg);
+    background-size: cover;
+}
+
+.planet-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+
+}
+.pick-number {
+    font-family: "Barlow Condensed", sans-serif;
+    color: #979797;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+}
+
+.pick-text {
+    font-family: "Barlow Condensed", sans-serif;
+    color: #FFFFFF;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+}
+
+.planet {
+    width: 150px;
+    height: 150px;
+    background-image: url(/assets/destination/image-moon.png);
+    background-size: cover;
+    transition: 1s;
+    animation: girar 60s linear infinite;
+}
+
+.info-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+.planets-options {
+    display: flex;
+    gap: 12px;
+    color: #D0D6F9;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    
+}
+.moon, .mars, .europa, .titan {
+    border-bottom: 3px solid transparent;
+    height: 28px;
+    transition: 0.5s;
+    
+}
+.moon{
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.planet-name {
+    font-size: 56px;
+    color: #FFFFFF;
+    font-family: "Bellefair", serif;
+}
+
+.description-planet {
+    width: 68%;
+    font-size: 15px;
+    line-height: 25px;
+    color: #D0D6F9;
+    font-family: "Barlow Condensed", sans-serif;
+    text-align: center;
+    
+    
+}
+
+hr {
+    height: 2px;
+    width: 80%;
+    opacity: 0.4;
+}
+.avg-distance {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.avg-text, .estimated-text {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    color: #D0D6F9;
+    
+}
+.total-distance, .total-estimated {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-family: "Bellefair", serif;
+    
+}
+
+.estimated-time {
+     display: flex;
+     flex-direction: column;
+     gap: 12px;
+     justify-content: center;
+    align-items: center;
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+
+@media (min-width: 768px) {
+
+    section {
+        margin-top: 72px;
+    }
+
+    .numbers {
+        display: none;
+    }
+    .pick {
+        width: 80%;
+        text-align: start;
+        
+    }
+    .pick-text, .pick-number {
+    font-size: 20px;
+    }
+    .planet {
+        width: 300px;
+        height: 300px;
+        margin-top: 50px;
+    }
+    .planets-options {
+        width: 286px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .moon,.mars,.europa, .titan {
+        font-size: 16px;
+    }
+    .planet-name {
+        font-size: 80px;
+    }
+    .description-planet {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+    .distance-and-time {
+        display: flex;
+        gap: 48px;
+        height: 90px;
+    }
+    .avg-distance {
+        margin: 0;
+    }
+    .main-cont {
+        background-image: url(/assets/destination/background-destination-tablet.jpg);
+    }
+    .icon-menu {
+        display: none;
+    }
+
+    .menu {
+        
+        flex-direction: row;
+        padding: 0px;
+        padding-left: 24px;
+        padding-right: 24px;
+        
+        width: 450px;
+        height: 96px;
+        
+        top: 0; 
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: none;
+        justify-content: space-around;
+        align-items: center;
+        transition: 0s;
+        
+        
+
+        
+        
+    
+    }
+   
+    .home, .destination, .crew, .tech {
+        
+        display: flex;
+        gap: 3px;
+        align-items: center;
+        height: 100%;
+        border-bottom: 3px solid transparent;
+
+    }
+    .home:hover, .crew:hover, .tech:hover {
+        border-bottom: 3px solid #979797; 
+        cursor: pointer;
+        
+    }
+
+    .destination {
+        border-bottom: 3px solid #FFFFFF;
+    }
+
+    
+    .home:hover {
+        cursor: pointer;
+    }
+
+    main {
+        margin-top: 106px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .main-cont {
+        background-image: url(/assets/destination/background-destination-desktop.jpg);
+        background-size: cover;
+        overflow: hidden;
+    }
+    .menu {
+        width: 60%;
+        background-color: rgba(255, 255, 255, 0.01);
+        backdrop-filter: blur(10px);
+        transition: 0s;
+    }
+main {
+    flex-direction: row;
+    
+    justify-content: space-between;
+    
+}    
+section {
+    display: flex;
+    margin: 32px;
+    
+
+}
+.info-section {
+    align-items: baseline;
+}
+.description-planet {
+    font-size: 18px;
+    text-align: start;
+    margin-bottom: 120px;
+}
+hr {
+    margin: 0;
+    width: 70%;
+}
+
+.planet {
+    width: 430px;
+    height: 430px;
+}
+.moon:hover, .mars:hover, .europa:hover, .titan:hover{
+    cursor: pointer;
+}
+}

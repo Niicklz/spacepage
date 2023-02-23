@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/reset-min.css" />
+    <link rel="stylesheet" href="/destination-style.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="main-cont">
+      <header>
+        <nav>
+          <figure class="logo"></figure>
+          <div class="icon-menu-and-options">
+            <figure class="icon-menu closed" id="iconMenu"></figure>
+          </div>
+        </nav>
+        <ul class="menu inactive" id="menu">
+          <li class="home">
+            <a href="/index.html">
+              <span class="numbers">00</span>
+            <span class="text-option">HOME</span>
+            </a>
+            
+            
+          </li>
+          <li class="destination">
+            <a href=""
+              ><span class="numbers">01</span>
+              <span class="text-option">DESTINATION</span></a
+            >
+          </li>
+          <li class="crew">
+            <a href="/crew-commander.html"
+              ><span class="numbers">02</span>
+              <span class="text-option">CREW</span></a
+            >
+          </li>
+          <li class="tech">
+            <a href="/technology-capsule.html"
+              ><span class="numbers">03</span>
+              <span class="text-option">TECH</span></a
+            >
+          </li>
+        </ul>
+      </header>
+      <section>
+        <div class="planet-section">
+          <h6 class="pick">
+            <span class="pick-number">01</span>
+            <span class="pick-text">PICK YOUR DESTINATION</span>
+          </h6>
+          <figure class="planet" id="planet"></figure>
+        </div>
+        <div class="info-section">
+          <ul class="planets-options">
+            <li class="moon"  id="moon">MOON</li>
+            <li class="mars" id="mars">MARS</li>
+            <li class="europa" id="europa" >EUROPA</li>
+            <li class="titan" id="titan" >TITAN</li>
+          </ul>
+          <h2 class="planet-name" id="planetName">MOON</h2>
+          <p class="description-planet" id="descriptionPlanet">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </p>
+          <hr />
+          <div class="distance-and-time">
+            <div class="avg-distance">
+              <p class="avg-text">AVG. DISTANCE</p>
+              <h6 class="total-distance" id="totalDistance">384,400 KM</h6>
+            </div>
+            <div class="estimated-time">
+              <p class="estimated-text">EST. TRAVEL TIME</p>
+              <h6 class="total-estimated" id="totalEstimated">3 DAYS</h6>
+            </div>
+          </div>
+         
+        </div>
+      </section>
+    </div>
+    <script src="/destination.js"></script>
+  </body>
+</html>

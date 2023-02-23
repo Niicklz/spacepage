@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/reset-min.css" />
+    <link rel="stylesheet" href="/tech-style.css" />
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <div class="main-cont">
+    <header>
+      <nav>
+        <figure class="logo"></figure>
+        <div class="icon-menu-and-options">
+          <figure class="icon-menu closed" id="iconMenu"></figure>
+        </div>
+      </nav>
+      <ul class="menu inactive" id="menu">
+        <li class="home">
+          <a href="/index.html">
+            <span class="numbers">00</span>
+          <span class="text-option">HOME</span>
+          </a>
+          
+        </li>
+        <li class="destination">
+          <a href="/destination-europa.html"
+            ><span class="numbers">01</span>
+            <span class="text-option">DESTINATION</span></a
+          >
+        </li>
+        <li class="crew">
+          <a href="/crew-commander.html"
+            ><span class="numbers">02</span>
+            <span class="text-option">CREW</span></a
+          >
+        </li>
+        <li class="tech">
+          <a href="/technology-capsule.html"
+            ><span class="numbers">03</span>
+            <span class="text-option">TECH</span></a
+          >
+        </li>
+      </ul>
+    </header>
+    <h6 class="space-launch">
+      <span class="number-launch">03 </span>
+      <span class="text-launch">SPACE LAUNCH 101</span>
+    </h6>
+    <section>
+      <figure class="main-img">
+        <video id="mainVideo" src="/SpaceX Falcon Heavy- Elon Musk's Engineering Masterpiece.mp4" muted  controls autoplay></video>
+      </figure>
+      <div class="descript-and-options">
+        
+        <div class="options">
+          <div class="btn vehicle" id="vehicle">1</div>
+          <div class="btn spaceport" id="spaceport">2</div>
+          <div class="btn capsule" id="capsule">3</div>
+        </div>
+        <div class="main-texts">
+          <h5 class="terminology">THE TERMINOLOGY...</h5>
+          <h6 class="main-name" id="mainName">LAUNCH VEHICLE</h6>
+          <p class="description" id="description">
+            A launch vehicle or carrier rocket is a 
+            rocket-propelled vehicle used to carry a payload
+            from Earth's surface to space, usually to Earth
+            orbit or beyond. Our WEB-X carrier rocket is the
+            most powerful in operation. Standing 150 metres
+            tall, it's quite an awe-inspiring sight on the launch pad!
+
+          </p>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="tech.js"></script>
+</body>
+</html>

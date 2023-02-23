@@ -1,0 +1,290 @@
+
+.main-cont {
+    background-image: url(/background-home-mobile.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-width: 360px;
+    
+    
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+header {
+    width: 100%;
+    padding: 24px;
+    
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    align-items: center;
+    
+}
+
+.icon-menu-and-options {
+    z-index: 1000;
+}
+
+.icon-menu {
+    width: 24px;
+    height: 21px;
+    background-image: url(/icon-hamburger.svg);
+    transition: 0.3s;
+    
+    
+}
+
+.open {
+    width: 25px;
+    height: 25px;
+    background-image: url(/icon-close.svg);
+    background-size: cover;
+    transition: 0.3s;
+
+}
+
+.menu {    
+    position: absolute;
+    right: 0;    
+    width: 65%;
+    background-color: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(19px);
+    height: 100%;
+    top: 0;
+    z-index: 0; 
+    padding-left: 48px;
+    padding-top: 118px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    transition: 1s;
+
+
+    
+}
+.inactive {
+    top: -100vh;
+    transition: 0s;
+}
+
+.numbers {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.text-option {
+    color: #D0D6F9;
+
+}
+
+
+
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background-image: url(/logo.svg);
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-top: 20px;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.slogan, .tittle, .description {
+    text-align: center;
+}
+
+.slogan {
+    font-family: "Barlow Condensed", sans-serif;
+    color: #D0D6F9;
+}
+
+.tittle {
+     color: #FFFFFF;
+     font-size: 80px;
+     font-family: "Bellefair", serif;
+}
+
+.description {
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #D0D6F9;
+}
+
+.explore {
+    margin-top: 81px;
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    border-radius: 50%;
+    color: #0B0D17;
+    background-color: #FFFFFF;
+    border: none;
+    font-family: "Bellefair", serif;
+    line-height: 1.25px;
+    font-size: 20px;
+    font-weight: 200;
+
+}
+
+.explore:hover {
+    transition: 1s;
+    box-shadow: -1px 4px 0px 91px rgba(151,151,151,0.92);
+}
+
+
+@media (min-width: 768px) {
+    .main-cont {
+        background-image: url(/background-home-tablet.jpg);
+    }
+    .icon-menu {
+        display: none;
+    }
+
+    .menu {
+        
+        flex-direction: row;
+        padding: 0px;
+        padding-left: 24px;
+        padding-right: 24px;
+        
+        width: 450px;
+        height: 96px;
+        
+        top: 0; 
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: none;
+        justify-content: space-around;
+        align-items: center;
+        transition: 0s;
+        
+        
+
+        
+        
+    
+    }
+    .home, .destination, .crew, .tech {
+        
+        display: flex;
+        gap: 3px;
+        align-items: center;
+        height: 100%;
+        border-bottom: 3px solid transparent;
+
+    }
+    .destination:hover, .crew:hover, .tech:hover {
+        border-bottom: 3px solid #979797; 
+        cursor: pointer;
+        
+    }
+
+    .home {
+        border-bottom: 3px solid #979797;
+    }
+    .home:hover {
+        cursor: pointer;
+    }
+
+    main {
+        margin-top: 106px;
+    }
+
+    .slogan {
+        font-size: 24px;
+    }
+    .tittle {
+        font-size: 150px;
+        margin-top: 24px;
+    }
+    .description {
+        font-size: 20px;
+        line-height: 28px;
+        padding-left: 130px;
+        padding-right: 130px;
+        margin-top: 24px;
+    }
+    .explore {
+        margin-top: 156px;
+        width: 242px;
+        height: 242px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-cont {
+        background-image: url(/background-home-desktop.jpg);
+        background-size: cover;
+    }
+    .menu {
+        width: 60%;
+        background-color: rgba(255, 255, 255, 0.01);
+        backdrop-filter: blur(10px);
+        transition: 0s;
+    }
+main {
+    flex-direction: row;
+    
+    justify-content: space-between;
+    
+}    
+
+section {
+    display: block;
+    justify-content: center;
+    width: 600px;
+    padding-left: 72px;
+    padding-right: 48px;
+    margin-top: 120px;
+   
+
+    
+    
+    
+    
+}
+.slogan, .tittle, .description {
+    text-align: start;
+    
+}
+.description {
+    padding: 0px;
+    
+}
+.explore {
+    width: 274px;
+    height: 274px;
+    margin-right: 200px;
+    
+}
+}
+
+
